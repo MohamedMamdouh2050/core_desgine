@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Descrtpion" content="يسعي المكتب دائما ً علي الإرتقاء بالخدمات الاستشارية الهندسية في المملكة العربية السعودية
+    بأفضل الكوادر الوطنية والعالمية وأعلي المعايير المهنية للوصول بمخرجات العمل الهندسي إلي
+    أعلي درجات الجودة والدقة">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@200;400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="icon.ico">
+    <title>نواة الحلول</title>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="Logo" class="img_one">
+        <nav class="navigation">
+            <ul>
+                <a href="/index.html"><li>الرئيسية</li></a>
+                <a href="#Services"><li>الخدمات</li></a>
+                <a href="/أقسام الشركة/أقسام الشركة.html"><li>أقسام الشركة</li></a>
+                <a href="/من نحن/Abput us.html"><li>من نحن</li></a>
+                <a href="/تواصل معانا/Contact us.html"><li>تواصل معانا</li></a>
+            </ul>
+        </nav>
+            <a href="/تواصل معانا/Contact us.html">
+                <button class="btn">إتصل بنا الأن</button>
+            </a>
+    </header>
+    <section class="input">
+        <form action="https://formsubmit.co/mohamedmamdouhabedelaziz@gmail.com" method="post">
+            <div class="info-1">
+            <label>أدخل أسمك</label>
+            <input type="text">
+            </div>
+
+            <div class="info-1">
+                <label>رقم الهاتف</label>
+                <input type="number">
+            </div>
+
+            <div class="info-1">
+                <label>البريد الألكتروني</label>
+                <input type="email">
+            </div>
+
+            <div class="info-1">
+                <label>الأستفسار</label>
+                <textarea name="message" cols="38"></textarea>
+            </div>
+
+            <div class="info-1">
+                <a href="mohamedmamdouhabedelaziz@gmail.com"><button type="submit" class="btn-2">أرسال</button></a>
+            </div>
+        </form>
+        <img src="Figer.png" alt="Figer" class="Figer">
+        <div></div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "mohamedmamdouhabedelaziz@gmail.com",
+                Password : "AAqq11ww22",
+                To : 'mohamedmamdouhabedelaziz@gmail.com',
+                From : Document.getelmentbyid("email").value,
+                Subject : "Now Contact From Enquiry",
+                Body : "أدخل أسمك" + Document.getelmentbyid("أدخل أسمك").value
+                                +"<br> رقم الهاتف:"+ Document.getelmentbyid("number").value
+                                +"<br> البريد الألكتروني:"+ Document.getelmentbyid("email").value
+                                +"<br> الأستفسار:"+ Document.getelmentbyid("message").value                                 
+            }).then(
+            message => alert("message Send Succesfully")
+            );               
+    </script>
+    <footer>
+        <div class="final-text">
+            <img src="Logo.png" alt="Logo" class="img_one">
+            <h4 class="final">الخصوصية</h4>
+            <h4 class="final">الشروط والأحكام</h4>
+            <h4 class="final">جميع الحقوق محفوظة © لنواة الحلول للإستشارات الهندسية - 2022</h4>
+        </div>
+    </footer>
+</body>
+</html>
